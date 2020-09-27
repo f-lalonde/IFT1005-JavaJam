@@ -1,0 +1,55 @@
+﻿<!--
+Devoir 4, IFT-1005
+Francis Lalonde (801363)
+Émilie Rufiange (20168376)
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Carrières au Café JavaJam</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="javajam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Café JavaJam</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="musique.html">Musique</a></li>
+                <li><a href="carrieres.html">Carrières</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img src="menu.jpg">
+        </main>
+        <footer>
+            Copyright &copy; 2016 Café JavaJam<br>
+            <a href="mailto:yourfirstname@yourlastname.com">prenom@nom.com</a>
+        </footer>
+    </div>
+    <script>
+        var formulaire = document.getElementById("formulaire");
+        var nom = document.getElementById("myName");
+        var email = document.getElementById("myEmail");
+        
+        var verif = function(){
+            if(nom.value == ""){
+                alert("Entrer un nom est obligatoire");
+                return false;
+            }
+            if(email.value.split("@").length <2){
+                alert("Courriel invalide");
+                return false;
+            }
+        };
+        
+        formulaire.onsubmit = verif;
+    </script>
+</body>
+</html>

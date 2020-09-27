@@ -1,0 +1,61 @@
+﻿<!--
+Devoir 4, IFT-1005
+Francis Lalonde (801363)
+Émilie Rufiange (20168376)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Musique au Café JavaJam</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="javajam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Café JavaJam</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="musique.html">Musique</a></li>
+                <li><a href="carrieres.html">Carrières</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="heroguitar"></div>
+            <h2>Musique au JavaJam</h2>
+            <p>Le premier vendredi soir de chaque mois à JavaJam est une
+            soirée spéciale. Rejoignez-nous de 20h à 23h pour <span id ="popup">
+            une musique que vous ne voudrez pas manquer</span>!</p>
+            <h4>Janvier</h4>
+            <div class="details">
+                <a href="melanie.jpg"><img src="melaniethumb.jpg" class="floatleft"
+                alt="Melanie Morris" width="80" height="80"></a>
+                Melanie Morris divertit avec son style flok mélodique.
+            </div>
+            <h4>Février</h4>
+            <div class="details">
+                <a href="greg.jpg"><img src="gregthumb.jpg" class="floatleft"
+                alt="Tahoe Greg" width="80" height="80"></a>
+                Tahoe Greg est de retour de sa tournée. Nouvelles chansons.
+                Nouvelles histoires.
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2016 Café JavaJam<br>
+            <a href="mailto:yourfirstname@yourlastname.com">prénom@nom.com</a>
+        </footer>
+    </div>
+    <script>
+        var popup = function(){
+            alert("Les billets se vendent vite, donc agissez rapidement!");
+        }
+        document.getElementById("popup").onmouseover = popup;
+        
+    </script>
+</body>
+</html>

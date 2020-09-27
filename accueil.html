@@ -1,0 +1,61 @@
+﻿<!--
+Devoir 7, IFT-1005
+Francis Lalonde (801363)
+Émilie Rufiange (20168376)
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Café JavaJam</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="javajam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Café JavaJam</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="musique.html">Musique</a></li>
+                <li><a href="carrieres.html">Carrières</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="heroroad"></div>
+            <h2>Suivez la route sinueuse vers JavaJam</h2>
+            <p>Nous sommes un peu à l'écart, mais prenez la route 42
+            vers JavaJam dès aujourd'hui! Faites-vous plaisir avec notre café
+            localement torréfié et nos pâtisseries maison. Vous vous sentirez
+            comme chez vous à JavaJam!</p>
+            <h3>Café JavaJam propose:</h3>
+            <ul>
+                <li>Spécialité Café et thé</li>
+                <li>Bagels, muffins et snacks biologiques</li>
+                <li>Musique et poésie</li>
+                <li>Karaoké</li>
+            </ul>
+            <div>
+                54321 Route 42<br>
+                Montréal, Qc<br>
+                <a href="tel:888-555-5555">888-555-5555</a><br><br>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2016 Café JavaJam<br>
+            <a href="mailto:yourfirstname@yourlastname.com">prénom@nom.com</a>
+            <span id = "modif">&nbsp;</span>
+            <span id = "jModif">&nbsp;</span>
+        </footer>
+    </div>
+<script>
+    document.getElementById("modif").innerHTML = "<br>"+
+        "Javascript dernière modification : "+document.lastModified+"<br>"; 
+    $("#jModif").html("jQuery dernière modification : "+ document.lastModified);
+</script>
+</body>
+</html>
